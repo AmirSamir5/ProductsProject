@@ -33,6 +33,9 @@
                         <viewLayoutGuide key="safeArea" id="9Gi-VA-EuZ"/>
                     </view>
                     <navigationItem key="navigationItem" id="L7x-U8-jnQ"/>
+                    <connections>
+                        <outlet property="tvProducts" destination="L7M-hJ-jTZ" id="5VM-Lr-m8A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kac-9X-KtJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

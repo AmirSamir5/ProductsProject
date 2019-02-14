@@ -8,11 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		0BBF0D576C577CE26EF642DD /* Pods_ProductsProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95D839AC12B07BDB92782484 /* Pods_ProductsProject.framework */; };
+		F45109DA2215389F0080DA05 /* ProductData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45109D92215389F0080DA05 /* ProductData.swift */; };
+		F45109DC221538FF0080DA05 /* ProductImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45109DB221538FF0080DA05 /* ProductImage.swift */; };
+		F45109DE22153A040080DA05 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45109DD22153A040080DA05 /* AppConstants.swift */; };
+		F45109E022153A130080DA05 /* DecodableCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45109DF22153A130080DA05 /* DecodableCheck.swift */; };
+		F45109E422153A530080DA05 /* AlamofireRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45109E322153A530080DA05 /* AlamofireRequests.swift */; };
+		F45109E6221544910080DA05 /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45109E5221544910080DA05 /* NetworkServices.swift */; };
+		F45109E8221546A20080DA05 /* NetworkProductData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45109E7221546A20080DA05 /* NetworkProductData.swift */; };
+		F45109EB2215501D0080DA05 /* ProductTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45109EA2215501D0080DA05 /* ProductTableView.swift */; };
+		F45109ED2215642D0080DA05 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45109EC2215642D0080DA05 /* CoreDataManager.swift */; };
+		F45109EF221585C20080DA05 /* LoadImageFromURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45109EE221585C20080DA05 /* LoadImageFromURL.swift */; };
 		F4832B1122142FC900F880E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4832B1022142FC900F880E2 /* AppDelegate.swift */; };
-		F4832B1922142FC900F880E2 /* ProductsProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F4832B1722142FC900F880E2 /* ProductsProject.xcdatamodeld */; };
+		F4832B1922142FC900F880E2 /* ProductsModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F4832B1722142FC900F880E2 /* ProductsModel.xcdatamodeld */; };
 		F4832B1B22142FCC00F880E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4832B1A22142FCC00F880E2 /* Assets.xcassets */; };
 		F4832B1E22142FCC00F880E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4832B1C22142FCC00F880E2 /* LaunchScreen.storyboard */; };
-		F4832B2622142FED00F880E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4832B2522142FED00F880E2 /* Main.storyboard */; };
+		F4832B2622142FED00F880E2 /* MainProducts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4832B2522142FED00F880E2 /* MainProducts.storyboard */; };
 		F4832B282214304900F880E2 /* ProductListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4832B272214304900F880E2 /* ProductListController.swift */; };
 		F4832B2A2214305600F880E2 /* ProductDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4832B292214305600F880E2 /* ProductDetailsController.swift */; };
 		F4832B362214315B00F880E2 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4832B342214315B00F880E2 /* ProductTableViewCell.swift */; };
@@ -23,13 +33,23 @@
 		88A34B32FFA6EA4E986E16AC /* Pods-ProductsProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProductsProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProductsProject/Pods-ProductsProject.debug.xcconfig"; sourceTree = "<group>"; };
 		95D839AC12B07BDB92782484 /* Pods_ProductsProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProductsProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C21D239170F5F10AE8B9A09 /* Pods-ProductsProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProductsProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProductsProject/Pods-ProductsProject.release.xcconfig"; sourceTree = "<group>"; };
+		F45109D92215389F0080DA05 /* ProductData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductData.swift; sourceTree = "<group>"; };
+		F45109DB221538FF0080DA05 /* ProductImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductImage.swift; sourceTree = "<group>"; };
+		F45109DD22153A040080DA05 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		F45109DF22153A130080DA05 /* DecodableCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableCheck.swift; sourceTree = "<group>"; };
+		F45109E322153A530080DA05 /* AlamofireRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireRequests.swift; sourceTree = "<group>"; };
+		F45109E5221544910080DA05 /* NetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
+		F45109E7221546A20080DA05 /* NetworkProductData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProductData.swift; sourceTree = "<group>"; };
+		F45109EA2215501D0080DA05 /* ProductTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableView.swift; sourceTree = "<group>"; };
+		F45109EC2215642D0080DA05 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		F45109EE221585C20080DA05 /* LoadImageFromURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadImageFromURL.swift; sourceTree = "<group>"; };
 		F4832B0D22142FC900F880E2 /* ProductsProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProductsProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4832B1022142FC900F880E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4832B1822142FC900F880E2 /* ProductsProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProductsProject.xcdatamodel; sourceTree = "<group>"; };
 		F4832B1A22142FCC00F880E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4832B1D22142FCC00F880E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4832B1F22142FCC00F880E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F4832B2522142FED00F880E2 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F4832B2522142FED00F880E2 /* MainProducts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainProducts.storyboard; sourceTree = "<group>"; };
 		F4832B272214304900F880E2 /* ProductListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListController.swift; sourceTree = "<group>"; };
 		F4832B292214305600F880E2 /* ProductDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsController.swift; sourceTree = "<group>"; };
 		F4832B342214315B00F880E2 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
@@ -65,6 +85,32 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F45109E122153A2D0080DA05 /* HandleRequests */ = {
+			isa = PBXGroup;
+			children = (
+				F45109DF22153A130080DA05 /* DecodableCheck.swift */,
+				F45109E322153A530080DA05 /* AlamofireRequests.swift */,
+				F45109E5221544910080DA05 /* NetworkServices.swift */,
+			);
+			path = HandleRequests;
+			sourceTree = "<group>";
+		};
+		F45109E222153A380080DA05 /* NetworkModels */ = {
+			isa = PBXGroup;
+			children = (
+				F45109E7221546A20080DA05 /* NetworkProductData.swift */,
+			);
+			path = NetworkModels;
+			sourceTree = "<group>";
+		};
+		F45109E9221550040080DA05 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F45109EA2215501D0080DA05 /* ProductTableView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		F4832B0422142FC900F880E2 = {
 			isa = PBXGroup;
 			children = (
@@ -96,7 +142,7 @@
 				F4832B1A22142FCC00F880E2 /* Assets.xcassets */,
 				F4832B1C22142FCC00F880E2 /* LaunchScreen.storyboard */,
 				F4832B1F22142FCC00F880E2 /* Info.plist */,
-				F4832B1722142FC900F880E2 /* ProductsProject.xcdatamodeld */,
+				F4832B1722142FC900F880E2 /* ProductsModel.xcdatamodeld */,
 			);
 			path = ProductsProject;
 			sourceTree = "<group>";
@@ -112,6 +158,8 @@
 		F4832B2C2214306700F880E2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F45109D92215389F0080DA05 /* ProductData.swift */,
+				F45109DB221538FF0080DA05 /* ProductImage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -126,6 +174,8 @@
 		F4832B2F2214307E00F880E2 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				F45109DD22153A040080DA05 /* AppConstants.swift */,
+				F45109EE221585C20080DA05 /* LoadImageFromURL.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -133,6 +183,7 @@
 		F4832B302214308300F880E2 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				F45109EC2215642D0080DA05 /* CoreDataManager.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -140,6 +191,8 @@
 		F4832B312214308800F880E2 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				F45109E122153A2D0080DA05 /* HandleRequests */,
+				F45109E222153A380080DA05 /* NetworkModels */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -147,9 +200,10 @@
 		F4832B32221430A800F880E2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F4832B2522142FED00F880E2 /* Main.storyboard */,
+				F4832B2522142FED00F880E2 /* MainProducts.storyboard */,
 				F4832B272214304900F880E2 /* ProductListController.swift */,
 				F4832B292214305600F880E2 /* ProductDetailsController.swift */,
+				F45109E9221550040080DA05 /* Extensions */,
 				F4832B332214313800F880E2 /* ProductCell */,
 			);
 			path = Products;
@@ -224,7 +278,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4832B2622142FED00F880E2 /* Main.storyboard in Resources */,
+				F4832B2622142FED00F880E2 /* MainProducts.storyboard in Resources */,
 				F4832B372214315B00F880E2 /* ProductTableViewCell.xib in Resources */,
 				F4832B1E22142FCC00F880E2 /* LaunchScreen.storyboard in Resources */,
 				F4832B1B22142FCC00F880E2 /* Assets.xcassets in Resources */,
@@ -242,10 +296,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ProductsProject/Pods-ProductsProject-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -277,11 +333,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F45109E8221546A20080DA05 /* NetworkProductData.swift in Sources */,
 				F4832B2A2214305600F880E2 /* ProductDetailsController.swift in Sources */,
+				F45109E6221544910080DA05 /* NetworkServices.swift in Sources */,
+				F45109E022153A130080DA05 /* DecodableCheck.swift in Sources */,
+				F45109DA2215389F0080DA05 /* ProductData.swift in Sources */,
 				F4832B282214304900F880E2 /* ProductListController.swift in Sources */,
+				F45109DE22153A040080DA05 /* AppConstants.swift in Sources */,
+				F45109EF221585C20080DA05 /* LoadImageFromURL.swift in Sources */,
 				F4832B362214315B00F880E2 /* ProductTableViewCell.swift in Sources */,
+				F45109EB2215501D0080DA05 /* ProductTableView.swift in Sources */,
+				F45109E422153A530080DA05 /* AlamofireRequests.swift in Sources */,
 				F4832B1122142FC900F880E2 /* AppDelegate.swift in Sources */,
-				F4832B1922142FC900F880E2 /* ProductsProject.xcdatamodeld in Sources */,
+				F4832B1922142FC900F880E2 /* ProductsModel.xcdatamodeld in Sources */,
+				F45109ED2215642D0080DA05 /* CoreDataManager.swift in Sources */,
+				F45109DC221538FF0080DA05 /* ProductImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,7 +490,10 @@
 				DEVELOPMENT_TEAM = RQYKV2DGB7;
 				INFOPLIST_FILE = ProductsProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.amir.ProductsProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -441,7 +510,10 @@
 				DEVELOPMENT_TEAM = RQYKV2DGB7;
 				INFOPLIST_FILE = ProductsProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.amir.ProductsProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -473,13 +545,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		F4832B1722142FC900F880E2 /* ProductsProject.xcdatamodeld */ = {
+		F4832B1722142FC900F880E2 /* ProductsModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				F4832B1822142FC900F880E2 /* ProductsProject.xcdatamodel */,
 			);
 			currentVersion = F4832B1822142FC900F880E2 /* ProductsProject.xcdatamodel */;
-			path = ProductsProject.xcdatamodeld;
+			path = ProductsModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

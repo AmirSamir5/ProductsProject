@@ -11,5 +11,12 @@ import UIKit
 class ProductTableViewCell: UITableViewCell {
 
     
+    //MARK:- Outlets
+    @IBOutlet weak var mainView: UIView!
+    @IBOutlet weak var itemTitle: UILabel!
+    @IBOutlet weak var itemPrice: UILabel!
+    @IBOutlet weak var itemImage: ImageLoader!
+    @IBOutlet weak var itemImageHeight: NSLayoutConstraint!
+    
     
 }

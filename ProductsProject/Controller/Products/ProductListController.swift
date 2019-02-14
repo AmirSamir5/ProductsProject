@@ -12,13 +12,14 @@ class ProductListController: UIViewController {
 
     
     //MARK:- Outlets
+    @IBOutlet weak var tvProducts: UITableView!
     
     
     
     
     
     //MARK:- Varialbes
-    
+    var productArray = [ModelProduct]()
     
     
     
@@ -29,7 +30,7 @@ class ProductListController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        uiSetup()
     }
     
     
@@ -38,7 +39,11 @@ class ProductListController: UIViewController {
     
     
     //MARK:- Setup Functions
-    
+    func uiSetup(){
+        tvProducts.dataSource = self
+        tvProducts.delegate   = self
+        tvProducts.register(UINib(nibName: Cell_Product, bundle: nil), forCellReuseIdentifier: Cell_Product)
+    }
     
     
     
@@ -46,7 +51,20 @@ class ProductListController: UIViewController {
     
     
     //MARK:- Server Functions
-    
+    func getAllProducts(){
+        NetworkProductData.getAllProducts(successed: { [weak self] (rootData) in
+            
+            guard let self = self else { return }
+            self.productArray = rootData.product
+            self.tvProducts.reloadData()
+            
+        }) { [weak self] (errorMsg) in
+            
+            guard let self = self else { return }
+            
+            
+        }
+    }
     
     
     
