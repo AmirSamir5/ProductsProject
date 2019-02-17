@@ -18,7 +18,7 @@ struct RootModelData: Decodable {
 
 struct ModelProduct: Decodable {
     
-    var id: String
+    var id: Int
     var name: String
     var productDescription: String
     var price : Double
@@ -27,5 +27,4 @@ struct ModelProduct: Decodable {
     private enum CodingKeys: String, CodingKey{
         case id, name, productDescription, price, image
     }
-    
 }

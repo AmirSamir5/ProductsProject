@@ -7,18 +7,20 @@
 //
 
 import UIKit
-
+import CoreData
 
 
 class ImageLoader: UIImageView{
     
     
     var imageUrlString: String?
+    var cellIndex: Int?
     let imageCache = NSCache<AnyObject, AnyObject>()
     let defaultImage = UIImage(named: "default-Image")
     
     
-    func loadImageBy(urlString:String){
+    func loadAndSaveImage(urlString:String,product_id: Int){
+        
         imageUrlString = urlString
         let url = URL(string: urlString)
         image = nil
@@ -32,7 +34,9 @@ class ImageLoader: UIImageView{
         
         URLSession.shared.dataTask(with: imageURL) { (data, response, error) in
             if error != nil{
-                self.image = self.defaultImage
+                if self.imageUrlString == urlString{
+                    self.image = self.defaultImage
+                }
                 return
             }
             
@@ -41,12 +45,19 @@ class ImageLoader: UIImageView{
                 
                 if self.imageUrlString == urlString{
                     self.image = imageToCache
+                    let fetchRequest = NSFetchRequest<Product>(entityName: CoreDataManager.instance.moduleName)
+                    do{
+                        let product = try CoreDataManager.instance.managedObjectContext.fetch(fetchRequest)
+                        
+                        product.filter{$0.itemId == product_id}.first!.itemImage = imageToCache?.pngData()
+                        
+                        CoreDataManager.instance.saveContext()
+                    }catch{
+                        fatalError("Couldn't Fetch Data")
+                    }
                 }
-                self.imageCache.setObject(imageToCache!, forKey: imageURL as AnyObject)
+                self.imageCache.setObject(imageToCache!, forKey: urlString as AnyObject)
             }
         }.resume()
-        
-        
-        
     }
 }

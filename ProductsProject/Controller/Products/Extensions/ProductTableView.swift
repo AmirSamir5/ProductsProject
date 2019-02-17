@@ -18,21 +18,34 @@ extension ProductListController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return productArray.count
+        return filteredItems.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: Cell_Product, for: indexPath) as? ProductTableViewCell else {return UITableViewCell()}
         
-        let product = productArray[indexPath.row]
-        let imageHeight = product.image.height
-        let imageWidth  = product.image.width
+        let item = filteredItems[indexPath.row]
+        let imageHeight = Int(item.height)
+        let imageWidth  = Int(item.width)
         
-        cell.itemTitle.text = product.name
-        cell.itemPrice.text = "Price: \(product.price) EGP"
-        cell.itemImage.loadImageBy(urlString: product.image.link)
+        cell.cellId                   = item.id
+        cell.itemTitle.text           = item.name
+        cell.itemPrice.text           = "Price: \(item.price) EGP"
         cell.itemImageHeight.constant = CGFloat(((Int(UIScreen.main.bounds.width) - 32) * imageHeight) / imageWidth)
+        cell.selectionStyle           = .none
         
+        if loadedFromCoreData {
+            guard let imageData = item.image else { return cell}
+            cell.itemImage.image = UIImage(data: imageData)
+        }else{
+            cell.itemImage.loadAndSaveImage(urlString: item.link ?? "", product_id: item.id)
+        }
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let cell = tableView.cellForRow(at: indexPath) as? ProductTableViewCell else { return }
+        selectedId = cell.cellId
+        performSegue(withIdentifier: GoTo_ProductDetails, sender: self)
     }
 }

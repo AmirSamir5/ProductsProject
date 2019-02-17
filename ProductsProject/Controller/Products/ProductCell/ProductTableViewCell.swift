@@ -19,4 +19,14 @@ class ProductTableViewCell: UITableViewCell {
     @IBOutlet weak var itemImageHeight: NSLayoutConstraint!
     
     
+    
+    //MARK:- Variables
+    var cellId: Int = -1
+    
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        mainView.layer.cornerRadius = 10
+        mainView.layer.masksToBounds = true
+    }
 }

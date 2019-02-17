@@ -40,6 +40,11 @@ let Cell_Product = "ProductTableViewCell"
 
 
 
+//MARK:- Segues Names
+let GoTo_ProductDetails = "GoToProductDetails"
+
+
+
 //MARK:- Messages
 struct Messages{
     

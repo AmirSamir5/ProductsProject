@@ -22,7 +22,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XCz-lI-KD5">
                         <rect key="frame" x="16" y="10" width="288" height="129.5"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Ss-iR-Pwy">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Ss-iR-Pwy" customClass="ImageLoader" customModule="ProductsProject" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="288" height="129.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="129.5" id="3yD-vs-FRi"/>
@@ -32,16 +32,16 @@
                                 <rect key="frame" x="0.0" y="0.0" width="288" height="129.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Edu-Cb-Gf0">
-                                        <rect key="frame" x="0.0" y="80.5" width="288" height="49"/>
+                                        <rect key="frame" x="0.0" y="90.5" width="288" height="39"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item Price" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZn-i5-LNI">
-                                                <rect key="frame" x="145.5" y="16" width="126.5" height="17"/>
+                                                <rect key="frame" x="145.5" y="11" width="126.5" height="17"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="item Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pLt-Pm-PVV">
-                                                <rect key="frame" x="16" y="16" width="129.5" height="17"/>
+                                                <rect key="frame" x="16" y="11" width="129.5" height="17"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -49,10 +49,10 @@
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstItem="pLt-Pm-PVV" firstAttribute="centerY" secondItem="Edu-Cb-Gf0" secondAttribute="centerY" id="8Ch-Fh-1iV"/>
                                             <constraint firstItem="pLt-Pm-PVV" firstAttribute="leading" secondItem="Edu-Cb-Gf0" secondAttribute="leading" constant="16" id="Mz6-xU-5dt"/>
                                             <constraint firstItem="vZn-i5-LNI" firstAttribute="centerY" secondItem="pLt-Pm-PVV" secondAttribute="centerY" id="VU8-dS-Zlb"/>
                                             <constraint firstAttribute="trailing" secondItem="vZn-i5-LNI" secondAttribute="trailing" constant="16" id="eNB-uy-8cS"/>
-                                            <constraint firstAttribute="bottom" secondItem="pLt-Pm-PVV" secondAttribute="bottom" constant="16" id="jpd-Tz-ykA"/>
                                             <constraint firstItem="pLt-Pm-PVV" firstAttribute="width" secondItem="Edu-Cb-Gf0" secondAttribute="width" multiplier="0.45" id="mXz-IR-j1C"/>
                                             <constraint firstItem="vZn-i5-LNI" firstAttribute="leading" secondItem="pLt-Pm-PVV" secondAttribute="trailing" id="nMZ-0k-YRm"/>
                                         </constraints>
@@ -61,7 +61,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="Edu-Cb-Gf0" secondAttribute="trailing" id="bkP-bs-HeR"/>
-                                    <constraint firstItem="Edu-Cb-Gf0" firstAttribute="height" secondItem="zx3-jr-sPM" secondAttribute="height" multiplier="0.38" id="cnF-Co-f70"/>
+                                    <constraint firstItem="Edu-Cb-Gf0" firstAttribute="height" secondItem="zx3-jr-sPM" secondAttribute="height" multiplier="0.3" id="cnF-Co-f70"/>
                                     <constraint firstAttribute="bottom" secondItem="Edu-Cb-Gf0" secondAttribute="bottom" id="fVU-fl-ijZ"/>
                                     <constraint firstItem="Edu-Cb-Gf0" firstAttribute="leading" secondItem="zx3-jr-sPM" secondAttribute="leading" id="pIx-q3-Hvl"/>
                                 </constraints>

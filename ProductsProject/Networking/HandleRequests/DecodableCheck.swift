@@ -9,8 +9,6 @@
 import Foundation
 
 
-
-
 func decode<T>(decodable: T.Type,data: Data) -> T? where T : Decodable{
     do {
         let responseModel = try JSONDecoder().decode(decodable, from: data)

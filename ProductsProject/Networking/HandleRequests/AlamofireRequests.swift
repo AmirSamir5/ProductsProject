@@ -17,10 +17,8 @@ class AlamofireRequests{
     
     
     
-    
     //Singltone Class
     private init(){}
-    
     
     
     
@@ -29,10 +27,6 @@ class AlamofireRequests{
     //Variables
     static let instance = AlamofireRequests()
     var alamoFireManager: SessionManager?
-    
-    
-    
-    
     
     
     
@@ -49,7 +43,7 @@ class AlamofireRequests{
         let httpMethod = HTTPMethod(rawValue: method)
         let configuration = URLSessionConfiguration.default
         configuration.timeoutIntervalForRequest = 30      // The request will timeout after 30 sec
-        
+        alamoFireManager = Alamofire.SessionManager(configuration: configuration)
         
         
         //iF you want to add more keys on the constant header
@@ -98,7 +92,7 @@ class AlamofireRequests{
                 case 500:
                     completion(false,nil, response.statusCode, Messages.ErrorMessages.Wrong.rawValue)
                 default:
-                    completion(false,nil, response.statusCode, "")
+                    completion(false,nil, response.statusCode, Messages.ErrorMessages.Wrong.rawValue)
                 }
             }
         }

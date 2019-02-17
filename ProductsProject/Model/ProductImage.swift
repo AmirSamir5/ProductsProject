@@ -10,8 +10,8 @@
 struct ModelProductImage: Decodable{
     
     var link: String
-    var height: Int
-    var width: Int
+    var height: String
+    var width: String
     
     private enum CodingKeys: String, CodingKey{
         case link, height, width
