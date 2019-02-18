@@ -9,6 +9,10 @@
 import UIKit
 import CoreData
 
+
+
+
+
 class ProductListController: UIViewController {
 
     
@@ -91,7 +95,9 @@ class ProductListController: UIViewController {
     
     //Check IF There is A Data In CoreData Or Not
     func checkCoreData(){
+        
         let fetchRequest = NSFetchRequest<Product>(entityName: CoreDataManager.instance.moduleName)
+        
         do{
             let product = try CoreDataManager.instance.managedObjectContext.fetch(fetchRequest)
             

@@ -10,7 +10,7 @@ import UIKit
 
 
 
-//USED TO ADD SEARCH BAR TO A CERTAIN CONTROLLER
+//ADD SEARCH BAR TO A CERTAIN CONTROLLER
 func setSearchBar(navItem: UINavigationItem , navController: UINavigationController, viewController: UIViewController,placeholder: String,tableView: UITableView?) -> UISearchController{
     
     

@@ -45,6 +45,8 @@ class ImageLoader: UIImageView{
                 
                 if self.imageUrlString == urlString{
                     self.image = imageToCache
+                    
+                    //Save Image To Core Data
                     let fetchRequest = NSFetchRequest<Product>(entityName: CoreDataManager.instance.moduleName)
                     do{
                         let product = try CoreDataManager.instance.managedObjectContext.fetch(fetchRequest)
